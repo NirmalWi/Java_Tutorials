@@ -3,23 +3,23 @@ public class Tasks {
 
         String word = "asb sscc ddd idssdi eersss";
 
-        String words[] = word.split(" ");
+        String words[] = word.split(" "); //split String into several words and store them in words String array
 
-        String revese[] = new String[words.length];
+        String reverse[] = new String[words.length];
 
         System.out.println("Word\tCount Palindrome");
 
         for (int x = 0; x < words.length; x++) {
 
-            revese[x] = new StringBuffer(words[x]).reverse().toString();
+            reverse[x] = new StringBuffer(words[x]).reverse().toString();  //reverse all words in words array and assign them into reverse array
 
-            int maxCount = 0;
-            String w = words[x];
+            int max = 0;
+            String w = words[x]; //assign words array elements into String W variable
 
 
             for (int i = 0; i < w.length(); i++) {
 
-                char ch = w.charAt(i);
+                char ch = w.charAt(i); //get the letters in W word one by one and save it in ch variable
 
                 int count = 0;
 
@@ -29,11 +29,11 @@ public class Tasks {
                     }
                 }
 
-                if (count > maxCount) {
-                    maxCount = count;
+                if (count > max) {
+                    max = count;
                 }
             }
-            System.out.println(words[x] + " \t  " + maxCount + "   \t" + words[x].equalsIgnoreCase(revese[x]));
+            System.out.println(words[x] + " \t  " + max + "   \t" + words[x].equalsIgnoreCase(reverse[x]));
         }
     }
 }
