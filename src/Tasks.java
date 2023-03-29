@@ -1,8 +1,8 @@
 public class Tasks {
     public static void main(String args[]) {
         ex1();
-        ex2();
-        ex3();
+//        ex2();
+//        ex3();
     }
 
     public static void ex1(){
