@@ -2,7 +2,7 @@ import java.util.Locale;
 
 public class Strings {
     public static void main(String[] args) {
-        //compare();
+        compare();
         //lastIndex();
         //subString();
         //reverse();
@@ -14,6 +14,8 @@ public class Strings {
         //formating();
         //concatenat();
         //codePointBefore();
+
+
     }
 
     public static void compare() {
@@ -109,7 +111,7 @@ public class Strings {
 
     public static void indexof() {
         String strOrig = "Hello MIT";
-        int intIndex = strOrig.indexOf("MIT");  //indexOf function will check the first letter of the given word and check it in Original String and return first letter index
+        int intIndex = strOrig.indexOf("k");  //indexOf function will check the first letter of the given word and check it in Original String and return first letter index
 
         if (intIndex == -1) {
             System.out.println("MIT not found");

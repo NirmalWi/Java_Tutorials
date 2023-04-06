@@ -10,12 +10,12 @@ public class DateTime {
 
     public static void main(String[] args) {
         //date_time();
-        //newDate();
+        newDate();
         //months();
         //weeks();
         //addTimes();
         //countryFormat();
-        currentWeekMonth();
+        //currentWeekMonth();
     }
 
     public static void date_time() {
@@ -46,7 +46,7 @@ public class DateTime {
 
         System.out.println("Time : " + fmt);
 
-        System.out.println("Tie : " + cal.get(Calendar.HOUR_OF_DAY) + ":" + cal.get(Calendar.MINUTE));
+        System.out.println("Time : " + cal.get(Calendar.HOUR_OF_DAY) + ":" + cal.get(Calendar.MINUTE));
 
         Formatter fm = new Formatter();
         fm.format("%tc", cal);

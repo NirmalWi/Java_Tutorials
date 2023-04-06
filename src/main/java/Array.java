@@ -7,20 +7,22 @@ import java.util.List;
 public class Array {
 
     public static void main(String[] args) {
-        //arrayShort();
+        //shortandsearch();
         bubbleSort();
         //stringMerge();
         //addArray();
         //arrayCopy();
         //arrayReverse();
+        //reverse();
         //removeElements();
         //removeAll();
         //contains();
         //arrayEquals();
+        //upperbound();
     }
 
 
-    public static void arrayShort() {
+    public static void shortandsearch() {
 
         int array[] = { 2, 5, -2, 6, -3, 8, 0, -7, -9, 4 };
         Arrays.sort(array);         //Arrays.short() will short array elements
@@ -42,6 +44,7 @@ public class Array {
     public static void bubbleSort() {
 
         int arr[] = { 2, 5, -2, 6, -3, 8, 0, -7, -9, 4 };
+
         System.out.println("Array Before Bubble Sort : ");
 
         for(int i = 0; i < arr.length; i++) {
@@ -138,6 +141,26 @@ public class Array {
         Collections.reverse(list);  //Collections has a methode reverse, and it will reverse all the elements in the Arraylist
 
         System.out.println("After reverse : "+list);
+    }
+
+    public static void reverse() {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.print("Array before reverse: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+
+        for(int i =0; i< numbers.length / 2;i++){
+            int temp = numbers[i];
+            numbers[i] = numbers[numbers.length -1 -i];
+            numbers[numbers.length -1 -i] = temp;
+        }
+
+        System.out.print("\nArray after reverse: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
     }
 
     public static void removeElements() {
@@ -238,6 +261,13 @@ public class Array {
         else
             System.out.println("Arr 1 != Arr 3");
 
+    }
+
+    public static void upperbound() {
+        String[][] data = new String[2][6];
+
+        System.out.println("Dimension 1: " + data.length);   //number of rows
+        System.out.println("Dimension 2: " + data[0].length); //number of columns
     }
 
 }
